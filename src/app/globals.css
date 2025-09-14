@@ -1,6 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .pokemonBox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
